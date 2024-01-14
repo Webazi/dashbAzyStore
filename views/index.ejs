@@ -11,11 +11,9 @@
 <body>
    <!-- header / atasan -->
    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a class="active" href="#about">About</a></li>
-      <li style="float:left"><a style="color: aliceblue;"><img style="margin-top: -.5rem;
-         margin-right: .2rem;
-         height: 33px;" src="https://cf.shopee.com.my/file/408c6185571d4f28db2c5983256d2c51"  alt=""></a></li>
+      <li><a href="#home">Cek invoice</a></li>
+      <li><a class="active" href="#about">Cara </a></li>
+      <li class="logos"><a><h4 >AzyStore</h4></a></li>
     </ul>
   
    <!-- body atau isi konten -->
@@ -26,7 +24,7 @@
       <div class="c">
          <div class="dd">
             <div class="d">
-               <h1>Diamond lock</h1>
+               <h1>Diamond Lock</h1>
             </div>
             <% for (let user of users) {%>
                <div class="wrapp">
@@ -35,30 +33,30 @@
                   </div>
                   <div class="harga">
                      <h2>
-                        Rp. <%= user.nama %>
+                        Rp. <%= user.jual%>
                      </h2>
                   </div>
 
-                  <button class="btn">sell</button>
+                  <div class="btn"><h3>Jual</h3></div>
                   <div class="jual">
                      <h1>Beli</h1>
                   </div>
                   <div class="harga">
                      <h2>
-                        Rp. <%= user.kelas %>
+                        Rp. <%= user.beli %>
                      </h2>
                   </div>
 
-                  <button class="btn">buy</button>
+                  <div class="btn"><h3>Beli</h3></div>
                </div>
                <% } %>
          </div>
       </div>
-      <!-- untuk isi pemilihan jual/beli -->
-      <div class="c">
+      <!-- untuk isi pemilihan jual/beli blue gem lock-->
+      <div class="cd">
          <div class="dd">
             <div class="d">
-               <h1>Diamond lock</h1>
+               <h1>Blue Gem Lock</h1>
             </div>
             <% for (let user of users) {%>
                <div class="wrapp">
@@ -67,26 +65,31 @@
                   </div>
                   <div class="harga">
                      <h2>
-                       Rp. <%= user.nama %>
+                       Rp. <%= user.jual_bgl %>
                      </h2>
                   </div>
 
-                  <button class="btn">sell</button>
+                  <div class="btn"><h3>Jual</h3></div>
                   <div class="jual">
                      <h1>Beli</h1>
                   </div>
                   <div class="harga">
                      <h2>
-                        Rp. <%= user.kelas %>
+                        Rp. <%= user.beli_bgl %>
                      </h2>
                   </div>
 
-                  <button class="btn">buy</button>
+                  <div class="btn"><h3>Beli</h3></div>
                </div>
                <% } %>
          </div>
-      </div>
+      </div><div class="syarat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laborum nihil laudantium perspiciatis labore ad ea dolores error nulla sint aut eligendi, cupiditate repellendus ut quod tenetur quos suscipit doloremque.
+   
+</div>
    </div>
+
+
+
    </div>
 <div class="space"></div>
    <footer><h1>COPYRIGHT BY AJI</h1></footer>

@@ -24,7 +24,26 @@ background-color: #222325;
 .c{
     color: white;
     background-color: #ffffff98;
-    background-image: url(./2284917.jpg);
+    background-image: url(./Unt.jpeg);
+    border-radius: 7%;padding: 10%;
+    width: 350px;
+    height: 41vh;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-size: contain;
+    box-shadow: 0 0 5px #1195d3, 0 0 4px #1195d3,
+    0 0 15px #1195d3, 0 0 20px #1195d3, 0 0 25px #1195d3,
+     0 0 10px #1195d3, 0 0 15px #1195d3, 0 0 10px #ffffff;
+
+}
+
+.cd{
+    color: white;
+    background-color: #ffffff98;
+    background-image: url(./OIP.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     border-radius: 7%;padding: 10%;
     width: 350px;
     height: 41vh;
@@ -129,29 +148,41 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #201c1c73; 
+    /* justify-content: center;
+    align-items: center;display: flex; */
   }
   
   li {
     float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+   
   }
   
   li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 20px 30px;
+    padding: 15px 30px;
     text-decoration: none;
-    padding-right: 1rem;
+    
   }
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {
     background-color: #111;
+    border-radius: 20%;
   }
+
+  .btn:hover {
+    background-color: #5cc3f3;
+  }
+
+.logos{
+    color: #fff;
+    display: block;
+    float: left;
+}
 
 @media(max-width: 700px) {
     .c {
@@ -164,6 +195,10 @@ ul {
      0 0 15px #1195d3, 0 0 20px #1195d3, 0 0 25px #1195d3,
       0 0 10px #1195d3, 0 0 15px #1195d3, 0 0 10px #ffffff;
 
+    }
+
+    li a {
+        padding: 7px 17px;
     }
     
     }
