@@ -30,7 +30,8 @@ background-color: #222325;
     height: 41vh;
     background-repeat: no-repeat;
     justify-content: center;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
     box-shadow: 0 0 5px #1195d3, 0 0 4px #1195d3,
     0 0 15px #1195d3, 0 0 20px #1195d3, 0 0 25px #1195d3,
      0 0 10px #1195d3, 0 0 15px #1195d3, 0 0 10px #ffffff;
@@ -121,7 +122,7 @@ background-color: #222325;
 }
 
 footer{
-    background-color: #ffffff;
+    background-color: #202020;
     padding: 20px;
     margin: 0;
     display: flex;
@@ -159,6 +160,11 @@ ul {
    
   }
   
+ .link{
+    text-decoration: none;
+    -webkit-text-fill-color: #fff;
+ }
+
   li a {
     display: block;
     color: white;
@@ -184,21 +190,66 @@ ul {
     float: left;
 }
 
+.syarat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;gap: 20px;
+    flex-direction: row;
+}
+
+.ipsum{
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cara{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #30303094;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-fill-color: #00ffea;
+    text-align: center;
+}
+
 @media(max-width: 700px) {
+
+    .syarat {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;gap: 20px;
+        flex-direction: column;
+    }
     .c {
         background-color: #ffffff46;
 
     padding: 14%;
     width: 250px;
-    height: 48vh;
+    height: 41vh;
     box-shadow: 0 0 5px #1195d3, 0 0 4px #1195d3,
      0 0 15px #1195d3, 0 0 20px #1195d3, 0 0 25px #1195d3,
       0 0 10px #1195d3, 0 0 15px #1195d3, 0 0 10px #ffffff;
 
     }
+    
+    .cd{
+        width: 280px;
+    }
 
     li a {
         padding: 7px 17px;
     }
+
+    
     
     }
+
+
+   

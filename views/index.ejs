@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" type="text/css" href="/style.css">
+
    <title></title>
 </head>
 
@@ -12,10 +13,12 @@
    <!-- header / atasan -->
    <ul>
       <li><a href="#home">Cek invoice</a></li>
-      <li><a class="active" href="#about">Cara </a></li>
-      <li class="logos"><a><h4 >AzyStore</h4></a></li>
-    </ul>
-  
+      <li><a class="active" href="#cara">Cara </a></li>
+      <li class="logos"><a>
+            <h4>AzyStore</h4>
+         </a></li>
+   </ul>
+
    <!-- body atau isi konten -->
    <div class="container">
       <div class="conten">
@@ -37,7 +40,9 @@
                      </h2>
                   </div>
 
-                  <div class="btn"><h3>Jual</h3></div>
+                  <a class="link" href="/jual"><div class="btn">
+                    <h3>Jual</h3>
+                  </div></a>
                   <div class="jual">
                      <h1>Beli</h1>
                   </div>
@@ -47,7 +52,9 @@
                      </h2>
                   </div>
 
-                  <div class="btn"><h3>Beli</h3></div>
+                  <a class="link" href="/beli"><div class="btn">
+                     <h3>Beli</h3>
+                  </div></a>
                </div>
                <% } %>
          </div>
@@ -65,11 +72,13 @@
                   </div>
                   <div class="harga">
                      <h2>
-                       Rp. <%= user.jual_bgl %>
+                        Rp. <%= user.jual_bgl %>
                      </h2>
                   </div>
 
-                  <div class="btn"><h3>Jual</h3></div>
+                  <a class="link" href="/jual"><div class="btn">
+                     <h3>Jual</h3>
+                   </div></a>
                   <div class="jual">
                      <h1>Beli</h1>
                   </div>
@@ -79,20 +88,29 @@
                      </h2>
                   </div>
 
-                  <div class="btn"><h3>Beli</h3></div>
+                  <a class="link" href="/beli"><div class="btn">
+                     <h3>beli</h3>
+                   </div></a>
                </div>
                <% } %>
          </div>
-      </div><div class="syarat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laborum nihil laudantium perspiciatis labore ad ea dolores error nulla sint aut eligendi, cupiditate repellendus ut quod tenetur quos suscipit doloremque.
-   
+      </div>
+      <div class="ipsum" id="cara"><h1>Cara membeli di AzyStore</h1>
+      <div class="syarat"></h1>
+
+         <div class="cara"><h1> Pilih item DL/BGL</h1> <p> bgl itu (100dls), lalu isi <br> form pembelian/bayaran dan semuanya harus di isi. <br> Untuk menjual juga sama caranya.</p></div>
+         <div class="cara"><h1> Masukan Info Penting</h1> <p>lalu di situ isi berapa pembelian, 
+            metode<br> pembayaran, GrowID (penting), nama world , dan juga masukan <br> bukti pembayaran dengan ScreenShot.</p></div>
+      </div>
+   </div>
 </div>
-   </div>
-
 
 
    </div>
-<div class="space"></div>
-   <footer><h1>COPYRIGHT BY AJI</h1></footer>
+   <div class="space"></div>
+   <footer>
+      <h4>COPYRIGHT BY AJI</h4>
+   </footer>
 </body>
 
 </html>
