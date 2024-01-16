@@ -68,7 +68,12 @@ app.get('/beli', (req,res)=> {
 })
 
 app.get('/admin', (req,res)=>{
-  res.render("dasboard")
+  const sql = `SELECT * FROM mahasiswa ORDER BY id DESC LIMIT 1;`
+    db.query(sql, (err,fields)=>{ 
+      // response(200,fields,"ini get data",res)
+      const users = JSON.parse(JSON.stringify(fields))
+       res.render("dashboard",{users:users})
+})
 })
    
 

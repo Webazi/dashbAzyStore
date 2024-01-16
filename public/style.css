@@ -218,7 +218,29 @@ ul {
     text-align: center;
 }
 
-@media(max-width: 700px) {
+/* untuk tablet */
+
+@media(max-width: 900px){
+    .c {
+        background-color: #ffffff46;
+
+    padding: 14%;
+    width: 250px;
+    height: 25vh;
+    box-shadow: 0 0 5px #1195d3, 0 0 4px #1195d3,
+     0 0 15px #1195d3, 0 0 20px #1195d3, 0 0 25px #1195d3,
+      0 0 10px #1195d3, 0 0 15px #1195d3, 0 0 10px #ffffff;
+
+    }
+    
+    .cd{
+        width: 330px;
+        height: 27vh;
+    }
+}
+
+/* untuk mobile */
+@media(max-width: 500px) {
 
     .syarat {
         display: flex;
@@ -241,6 +263,7 @@ ul {
     
     .cd{
         width: 280px;
+        height: 41vh;
     }
 
     li a {
@@ -251,5 +274,48 @@ ul {
     
     }
 
+
+
+    @media(max-height: 500px) {
+
+        .syarat {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;gap: 20px;
+            flex-direction: column;
+        }
+        .c {
+            background-color: #ffffff46;
+    
+        padding: 14%;
+        width: 250px;
+        height: 70vh;
+        box-shadow: 0 0 5px #1195d3, 0 0 4px #1195d3,
+         0 0 15px #1195d3, 0 0 20px #1195d3, 0 0 25px #1195d3,
+          0 0 10px #1195d3, 0 0 15px #1195d3, 0 0 10px #ffffff;
+    
+        }
+        
+        .cd{
+            width: 280px;
+            height: 77vh;
+        }
+    
+        li a {
+            padding: 7px 17px;
+        }
+    
+        
+        
+        }
+
+
+    @media(max-width: 200px){
+        body{
+            size: 20%;
+        }
+    }
+    
 
    

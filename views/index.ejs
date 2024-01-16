@@ -35,8 +35,8 @@
                      <h1>Jual</h1>
                   </div>
                   <div class="harga">
-                     <h2>
-                        Rp. <%= user.jual%>
+                     <h2><% const juals = parseFloat(user.jual) %>
+                        Rp. <%= juals.toLocaleString()%>
                      </h2>
                   </div>
 
@@ -47,9 +47,8 @@
                      <h1>Beli</h1>
                   </div>
                   <div class="harga">
-                     <h2>
-                        Rp. <%= user.beli %>
-                     </h2>
+                     <h2><% const belis = parseFloat(user.beli) %>
+                        Rp. <%= belis.toLocaleString()%>
                   </div>
 
                   <a class="link" href="/beli"><div class="btn">
@@ -71,8 +70,10 @@
                      <h1>Jual</h1>
                   </div>
                   <div class="harga">
+                     <% const hargas = parseFloat(user.jual)* 100 %>
                      <h2>
-                        Rp. <%= user.jual_bgl %>
+                        Rp.<%= hargas.toLocaleString() %>
+                        
                      </h2>
                   </div>
 
@@ -83,9 +84,8 @@
                      <h1>Beli</h1>
                   </div>
                   <div class="harga">
-                     <h2>
-                        Rp. <%= user.beli_bgl %>
-                     </h2>
+                     <h2><% const belis = parseFloat(user.beli) * 100 %>
+                        Rp. <%= belis.toLocaleString()%>
                   </div>
 
                   <a class="link" href="/beli"><div class="btn">

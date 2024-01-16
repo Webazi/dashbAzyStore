@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,22 +6,78 @@
     <title>Document</title>
 </head>
 <body>
+    <% for (let user of users) {%>
+    <div class="harga-sekarang"><h5>Harga DL sekarang</h5><p><%= user.jual %></p>
+    </div>
+    <div class="hargaBeli"><h3>harga DL untuk di jual</h3><p><%= user.beli %></p></div>
+    <% } %>
     <form action="/tambah" method="post" autocomplete="off" >
         <div class="container">
     <div class="Jual">
         <h3>Update harga Jual DL</h3>
-        <input  type="text" name="jual">
-        <h3>Update harga jual BGL</h3>
-        <input type="text" name="jual_bgl">
+        <input  type="number" name="jual">
     </div>
     <div class="beli">
         <h3>Update harga beli DL</h3>
-        <input type="text" name="beli">
-        <h3>Update haga beli BGL</h3>
-        <input type="text" name="beli_bgl">
-        <input type="submit">
+        <input type="number" name="beli">
     </div>
+    <input type="submit" value="Gaskeun">
 </div>
     </form>
+
+<h1></h1>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dash.css">
+  <title>Dashboard</title>
+</head>
+<body>
+
+  <div class="dashboard">
+    <div class="sidebar">
+      <h2>Dashboard</h2>
+      <ul>
+        <li class="active">Home</li>
+        <li>Analytics</li>
+        <li>Settings</li>
+        <!-- Tambahkan item-menu lainnya sesuai kebutuhan -->
+      </ul>
+    </div>
+
+    <div class="content">
+      <div class="header">
+        <h2>Welcome to the Dashboard</h2>
+      </div>
+      <div class="main-content">
+        <!-- Konten utama dashboard akan ditampilkan di sini -->
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <h3>Analytics Overview</h3>
+    <div class="analytics">
+      <div class="stat-box">
+        <h4>Total Users</h4>
+        <p>1,234</p>
+      </div>
+      <div class="stat-box">
+        <h4>Revenue</h4>
+        <p>$25,678</p>
+      </div>
+      <!-- Tambahkan statistik atau elemen lainnya -->
+    </div>
+
+    <div class="charts">
+      <!-- Tambahkan elemen chart atau grafik di sini -->
+    </div>
+  </div>
+
 </body>
 </html>
