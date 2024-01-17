@@ -72,7 +72,7 @@ app.get('/admin', (req,res)=>{
     db.query(sql, (err,fields)=>{ 
       // response(200,fields,"ini get data",res)
       const users = JSON.parse(JSON.stringify(fields))
-       res.render("dashboard",{users:users})
+       res.render("dasboard",{users:users})
 })
 })
    
