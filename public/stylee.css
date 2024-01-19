@@ -34,16 +34,20 @@ body {
 
 
 
-a {
+.box a {
     
     text-decoration: none;
-    display: block;
+    display: flex;
     width: 55%;
     color: #fdfdff;
     cursor: pointer;
     text-align: center;
     padding-right:  50px;
     padding-left: 50px;
+}
+
+.navbar {
+    display: none;
 }
 
 .log{
@@ -57,7 +61,7 @@ a {
     width: 100%;
 }
 
-a:hover{
+.box a:hover{
     background-color: #ffffff3d;
     border-radius: 8px;
     display: block;
@@ -70,13 +74,98 @@ a:hover{
     background-color: #00000f;
     min-height: 100vh;
     width: 80%;
+    display: flex;
 }
 
-.slide {
+
+
+@media (max-width: 690px) {
+
+   
+.btn{
+    display: block;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    margin: 7px;
+    flex-direction: column;
+}
+.slide{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #fdfdff;
+    
+   
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    animation: fadeInDown 0.5s ease-in-out;
+    text-decoration: none;
+    height: 10vh;
+}
+nav.hidden {
+    display: none;
+    animation: fadeOutUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+
+
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: px;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
     
 }
 
-@media (max-width: 690px) {
+nav a{
+    color: floralwhite;
+    gap: 20px;
+    background-color: #6b6b6b;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+
+
     .wrapper {
         display: none;
     }    

@@ -240,7 +240,7 @@ ul {
 }
 
 /* untuk mobile */
-@media(max-width: 500px) {
+@media(max-width: 600px) {
 
     .syarat {
         display: flex;
@@ -310,10 +310,48 @@ ul {
         
         }
 
+        @media(max-height: 620px) {
 
-    @media(max-width: 200px){
+            .c{
+                color: white;
+                background-color: #ffffff98;
+                background-image: url(./Unt.jpeg);
+                border-radius: 7%;padding: 10%;
+                width: 350px;
+                height: 41vh;
+                background-repeat: no-repeat;
+                justify-content: center;
+                background-position: center;
+                background-size: cover;
+                box-shadow: 0 0 5px #1195d3, 0 0 4px #1195d3,
+                0 0 15px #1195d3, 0 0 20px #1195d3, 0 0 25px #1195d3,
+                 0 0 10px #1195d3, 0 0 15px #1195d3, 0 0 10px #ffffff;
+            
+            }
+            
+            .cd{
+                color: white;
+                background-color: #ffffff98;
+                background-image: url(./OIP.jpeg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 7%;padding: 10%;
+                width: 350px;
+                height: 41vh;
+                justify-content: center;
+                box-shadow: 0 0 5px #1195d3, 0 0 4px #1195d3,
+                0 0 15px #1195d3, 0 0 20px #1195d3, 0 0 25px #1195d3,
+                 0 0 10px #1195d3, 0 0 15px #1195d3, 0 0 10px #ffffff;
+            
+            }
+            }
+    
+    
+    @media(max-width: 350px){
         body{
             size: 20%;
+            width: fit-content;
         }
     }
     
