@@ -4,78 +4,220 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/stylee.css">
-  <title>admin</title>
+  <link rel="stylesheet" type="text/css" href="./style/style2.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <title>
+    <%= title %>
+  </title>
 </head>
+
+
 
 <body>
   <div class="container">
-    <!-- navbar -->
-    <div class="wrapper">
-      <div class="box">
+    <!-- navbar untuk pc-->
+    <div class="wrapper" id="e">
+      <div class="box" id="d">
         <div class="log">
-          <h1>Pembelian</h1>
+          <h1>
+            <%= title %> Page
+          </h1>
         </div>
-        <a href="/jual">
-          <div class="box-isi">
-            <p>Produk</p>
+        <a href="<%= link1 %>" class="aji">
+          <div class="box-isi isi">
+            <span class="material-symbols-outlined">
+              home
+            </span>
+            <p>
+              <%= title1 %>
+            </p>
           </div>
         </a>
-        <a href="">
+
+        <a href="<%= link2 %>">
           <div class="box-isi">
-            <p>Pembeli</p>
+            <span class="material-symbols-outlined">
+              done
+            </span>
+            <p>
+              <%= title2 %>
+            </p>
           </div>
         </a>
-        <a href="">
+        <a href="<%= link3 %>">
           <div class="box-isi">
-            <p>Status</p>
+            <span class="material-symbols-outlined">
+              history
+            </span>
+            <p>
+              <%= title3 %>
+            </p>
           </div>
         </a>
-        <a href="">
+        <a href="<%= link4 %>">
           <div class="box-isi">
-            <p>Pembayaran</p>
+            <span class="material-symbols-outlined">
+              shoppingmode
+            </span>
+            <p>
+              <%= title4 %>
+            </p>
           </div>
+
         </a>
+
       </div>
+      <h1></h1>
 
       <!-- div wrapper -->
     </div>
 
     <!-- conten/isi -->
-    <div class="content">
-      <div class="navbar">
-      <div class="slide" id="ev"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256"
-        style="fill:#000000;">
-        <g transform="translate(51.2,51.2) scale(0.6,0.6)"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5,9v2h40v-2zM5,24v2h40v-2zM5,39v2h40v-2z"></path></g></g></g>
-        </svg>
+    <div class="content" id="content">
+      <div id="g">
+        <!-- navbar untuk mobile -->
+        <div class="navbar">
+          <div class="slide" id="ev"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+              viewBox="0,0,256,256" style="fill:#000000;">
+              <g transform="translate(51.2,51.2) scale(0.6,0.6)">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.12,5.12)">
+                    <path d="M5,9v2h40v-2zM5,24v2h40v-2zM5,39v2h40v-2z"></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <nav class="hidden" id="c">
+            <ul>
+              <li><a href="<%= link1 %>">
+                  <%= title1 %>
+                </a></li>
+              <li><a href="<%= link2 %>">
+                  <%= title2 %>
+                </a></li>
+              <li><a href="<%= link3 %>">
+                  <%= title3 %>
+                </a></li>
+              <li><a href="<%= link4 %>">
+                  <%= title4 %>
+                </a></li>
+            </ul>
+          </nav>
+
+        </div>
+        <!-- navbar pc -->
+        <div class="navbarPc" id="close" onclick="myFunction()"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="50" height="50" viewBox="0,0,256,256" style="fill:#000000;">
+            <g transform="translate(51.2,51.2) scale(0.6,0.6)">
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path d="M5,9v2h40v-2zM5,24v2h40v-2zM5,39v2h40v-2z"></path>
+                </g>
+              </g>
+            </g>
+          </svg></div>
+
       </div>
-      <nav  class="hidden" id="c">
-    <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">Status</a></li>
-      <li><a href="">History</a></li>
-      <li><a href="">Prices</a></li>
-    </ul>
-  </nav>
+
+      <div class="isi1">
+        <div class="af" id="account">
+          <h2>Akun</h2>
+          <div class="account-info-container">
+              <ul class="account-info">
+                  <li>Nama Pengguna: <strong><%= username %></strong></li>
+                 
+              </ul>
+              <div class="btnn-group">
+                 <a href="/logout"> <button class="btnn">logout</button></a>
+                  <button class="btnn">Ganti Password</button>
+                 
+              </div>
+          </div>
+      </div>
+      <div class="af" id="data">
+          <h2>Histori Transaksi</h2>
+          <table class="transaction-table">
+              <thead>
+                  <tr>
+                      <th>Tanggal</th>
+                      <th>Deskripsi</th>
+                      <th>Jumlah</th>
+                      <th>Status</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <% users.forEach(item => { %>
+                  <% let tanggalDariDatabase = item.tanggal;
+  
+                 
+                  let date = new Date(tanggalDariDatabase);
+                  
+                
+                  let tanggalYangDiinginkan = date.getFullYear() + '-' + ('0' + (date.getMonth() + 1)).slice(-2) + '-' + ('0' + date.getDate()).slice(-2) + ' ' + ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2) + ':' + ('0' + date.getSeconds()).slice(-2);
+                   %>
+                  <tr>
+                    <td><%= tanggalYangDiinginkan %></td>
+                      <td><%= item.nama %></td>
+                      <td><%= item.jumlah %></td>
+                      <td><%= item.status %></td>
+                  </tr>
+                <% }) %>
+              </tbody>
+          </table>
+      </div>
+      </div>
+
+
     </div>
-  </div>
 
-  <script >
-const Menu = document.getElementById("ev");
-const Icons = document.getElementById("c");
 
-Menu.addEventListener("click", () => {
-    Icons.classList.toggle("hidden");
-    if (!Icons.classList.contains("hidden")) {
-        Icons.style.animation = "none"; // Reset animation
-        void Icons.offsetWidth; // Trigger reflow
-        Icons.style.animation = "fadeInDown 0.5s ease-in-out";
-    } else {
-        Icons.style.animation = "fadeOutUp 0.5s ease-in-out";
-    }
-});
+    <script>
 
-</script>
+
+
+
+      const H = document.getElementById("content");
+      function myFunction() {
+        var x = document.getElementById("e");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+          H.style.width = "100%";
+        }
+      }
+      const Menu = document.getElementById("ev");
+      const Icons = document.getElementById("a");
+
+      Menu.addEventListener("click", () => {
+        var x = document.getElementById("c");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+          Icons.style.display = "";
+
+        } else {
+          x.style.display = "flex"
+          Icons.style.display = "none";
+        }
+
+
+      }
+
+      );
+
+
+    </script>
 </body>
 
 

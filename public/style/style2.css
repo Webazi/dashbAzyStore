@@ -1,0 +1,278 @@
+body {
+    background-color: #fdfdff;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+#flash {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#e {
+    background-color: #161616;
+    min-height: 100vh;
+    width: 20%;
+    left: 0;
+}
+
+.box {
+    display: flex;
+    min-height: 100%;
+    color: white;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aji {
+    background-color: #313131;
+    border-radius: 10px;
+}
+
+.box a {
+    text-decoration: none;
+    width: 55%;
+    color: #fdfdff;
+    cursor: pointer;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.navbar {
+    display: none;
+}
+
+.log {
+    background-color: #181818;
+    text-decoration: none;
+    text-align: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    border-bottom: 2px ridge #979797;
+    width: 100%;
+}
+
+.box a:hover {
+    background-color: #ffffff3d;
+    border-radius: 8px;
+}
+
+.box-isi {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.content {
+    background-color: #222222;
+    min-height: 100vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-isi:active {
+    background-color: #888;
+}
+
+.titles {
+    display: none;
+}
+
+.isi1{
+    display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+    
+    
+}
+
+.akun {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: right;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+ 
+    
+    
+}
+
+.user{
+    text-align: center;
+    background-color: #0b0b0b;
+    padding: 1%;
+    flex-direction: row;
+    width: 8%;
+    align-content: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.af {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+}
+.af h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+.account-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.account-info {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.account-info li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+}
+.btnn-group {
+    display: flex;
+    flex-direction: column;
+}
+.btnn {
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.btnn:hover {
+    background-color: #0056b3;
+}
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.transaction-table th, .transaction-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+.transaction-table th {
+    background-color: #f2f2f2;
+}
+.transaction-table tr:hover {
+    background-color: #f1f1f1;
+}
+@media (max-width: 690px) {
+    .titles {
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+    .navbarPc {
+        display: none;
+        flex-direction: row;
+    }
+    .btn {
+        display: block;
+    }
+    .navbar {
+        display: flex;
+        width: 100%;
+        background-color: #ffffff27;
+        flex-direction: row;
+    }
+    .slide {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        color: #fdfdff;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        animation: fadeInDown 0.5s ease-in-out;
+        text-decoration: none;
+    }
+    #c {
+        display: none;
+        margin: 0;
+        animation: fadeInDown 0.5s ease-in-out;
+    }
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    @keyframes fadeOutUp {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        margin: px;
+        gap: 10px;
+        list-style: none;
+        padding-left: 3px;
+        left: 0;
+        color: #ffffff;
+    }
+    nav a {
+        color: floralwhite;
+        gap: 15px;
+        background-color: rgb(255, 99, 71);
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    .wrapper {
+        display: none;
+    }
+    .content {
+        width: 100%;
+    }
+}

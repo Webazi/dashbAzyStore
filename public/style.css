@@ -24,7 +24,7 @@ background-color: #222325;
 .c{
     color: white;
     background-color: #ffffff98;
-    background-image: url(./Unt.jpeg);
+    background-image: url(./img/Unt.jpeg);
     border-radius: 7%;padding: 10%;
     width: 350px;
     height: 41vh;
@@ -40,8 +40,11 @@ background-color: #222325;
 
 .cd{
     color: white;
+    
+    
+    background-image: url(./img/OIP.jpeg);
     background-color: #ffffff98;
-    background-image: url(./OIP.jpeg);
+    opacity: 90%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -274,43 +277,7 @@ ul {
     
     }
 
-
-
-    @media(max-height: 500px) {
-
-        .syarat {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 10px;gap: 20px;
-            flex-direction: column;
-        }
-        .c {
-            background-color: #ffffff46;
-    
-        padding: 14%;
-        width: 250px;
-        height: 70vh;
-        box-shadow: 0 0 5px #1195d3, 0 0 4px #1195d3,
-         0 0 15px #1195d3, 0 0 20px #1195d3, 0 0 25px #1195d3,
-          0 0 10px #1195d3, 0 0 15px #1195d3, 0 0 10px #ffffff;
-    
-        }
-        
-        .cd{
-            width: 280px;
-            height: 77vh;
-        }
-    
-        li a {
-            padding: 7px 17px;
-        }
-    
-        
-        
-        }
-
-        @media(max-height: 620px) {
+       @media(max-height: 590px) {
 
             .c{
                 color: white;
@@ -348,12 +315,104 @@ ul {
             }
     
     
+
+    @media(max-height: 500px) {
+
+        .syarat {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;gap: 20px;
+            flex-direction: column;
+        }
+        .c {
+            background-color: #ffffff46;
+    
+        padding: 14%;
+        width: 250px;
+        height: 70vh;
+        box-shadow: 0 0 5px #1195d3, 0 0 4px #1195d3,
+         0 0 15px #1195d3, 0 0 20px #1195d3, 0 0 25px #1195d3,
+          0 0 10px #1195d3, 0 0 15px #1195d3, 0 0 10px #ffffff;
+    
+        }
+        
+        .cd{
+            width: 280px;
+            height: 77vh;
+        }
+    
+        li a {
+            padding: 7px 17px;
+        }
+    
+        
+        
+        }
+
+ 
+ 
+    @media(max-width: 390px){
+        .c {
+         height: 45vh;
+        }
+ 
+        .cd {
+         height: 45vh;
+        }
+     }
+    @media(max-width: 350px){
+       .c {
+        height: 60vh;
+       }
+
+       .cd {
+        height: 60vh;
+       }
+    }
+
     @media(max-width: 350px){
         body{
             size: 20%;
             width: fit-content;
         }
     }
+
+    @media(max-height: 320px) {
+
+        .syarat {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;gap: 20px;
+            flex-direction: column;
+        }
+        .c {
+            background-color: #ffffff46;
     
+        padding: 14%;
+        width: 250px;
+        height: 72vh;
+        box-shadow: 0 0 5px #1195d3, 0 0 4px #1195d3,
+         0 0 15px #1195d3, 0 0 20px #1195d3, 0 0 25px #1195d3,
+          0 0 10px #1195d3, 0 0 15px #1195d3, 0 0 10px #ffffff;
+    
+        }
+        
+        .cd{
+            width: 280px;
+            height: 78vh;
+        }
+    
+        li a {
+            padding: 7px 17px;
+        }
+    
+        
+        
+        }
+
+
+
 
    

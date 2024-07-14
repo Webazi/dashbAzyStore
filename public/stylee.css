@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-    background-color: #12223f;
+    background-color: #161616;
     min-height: 100vh;
     width: 20%;
     
@@ -32,18 +32,22 @@ body {
 
 
 
-
+.aji{
+    background-color: #313131;
+    border-radius: 10px;
+}
 
 .box a {
     
     text-decoration: none;
-    display: flex;
+   
     width: 55%;
     color: #fdfdff;
     cursor: pointer;
     text-align: center;
     padding-right:  50px;
     padding-left: 50px;
+  
 }
 
 .navbar {
@@ -51,31 +55,36 @@ body {
 }
 
 .log{
-    background-color:#162a4e;
+    background-color:#181818;
     text-decoration: none;
     text-align: center;
     left: 0;
     top: 0;
     right: 0;
-    border-bottom: 2px ridge #1c3563 ;
+    border-bottom: 2px ridge #979797 ;
     width: 100%;
 }
 
 .box a:hover{
     background-color: #ffffff3d;
     border-radius: 8px;
-    display: block;
-    color: #69c7fd;
-    width: 55%;
-    text-align: center;
+    
 }
 
+
+
+
 .content {
-    background-color: #00000f;
+    background-color: #222222;
     min-height: 100vh;
     width: 80%;
     display: flex;
 }
+
+.box-isi:active {
+    background-color: #888;
+ }
+ 
 
 
 
@@ -108,6 +117,7 @@ nav {
     flex-wrap: wrap;
     width: 100%;
     height: 100px;
+    justify-content: center;
     animation: fadeInDown 0.5s ease-in-out;
     text-decoration: none;
     height: 10vh;
@@ -158,7 +168,7 @@ nav ul {
 nav a{
     color: floralwhite;
     gap: 20px;
-    background-color: #6b6b6b;
+    background-color: rgb(255, 99, 71);
     text-decoration: none;
     padding: 7px;
     border-radius: 4px;

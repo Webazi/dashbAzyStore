@@ -1,0 +1,28 @@
+.container {
+    background-color: #fff9f9;
+    padding: 15vh;
+    border-radius: 9px;
+    
+
+    
+}
+
+.head{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea5c5c;
+}
+
+.user{
+    margin: 6px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    background-color: #ffdcdc;
+    text-decoration: none;
+}
