@@ -24,7 +24,7 @@ app.use(favicon(path.join(__dirname, './public/img', 'faviconn.ico')));
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "",
+  password: "Aji19027*",
   database: "uc"
 })
 
